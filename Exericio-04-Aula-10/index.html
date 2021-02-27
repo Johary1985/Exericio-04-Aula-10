@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tablas Erick</title>
+</head>
+<body>
+
+    <h1>Tabela de Usuarios</h1>
+    <form name="formulario">
+        <br>
+        <div class="formu">
+            <label>Usuario:</label>
+            <input type="text" name="name" id="name" required placeholder="Nome do Aluno">
+        </div>
+<br>
+        <div class="formu">
+            <label>Turma:</label>
+            <input type="number" name="tur" id="tur" required placeholder="Qual é a Turma?">
+        </div>
+<br>
+        <div class="formu">
+            <label>Modulo:</label>
+            <select id="mod">
+                <option selected disabled>Selecione uma Opcao</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVASCRIPT</option>
+            </select>
+        </div>
+        
+        <button type="button" onclick="dados()">Enviar Dados</button>
+    </form>
+
+    <div>
+        <table id="resultado">
+            <caption>Resultado:</caption>
+        <tr>
+            <th>Alumnos</th>
+            <th>Turma</th>
+            <th>Modulo</th>
+        </tr>
+
+        </table>
+    </div>
+
+    <button type="button" onclick="comparar()">Total</button>
+    <div class="mostrar"></div>
+
+
+    <script type="text/javascript" src="scritp.js"></script>
+
+
+
+
+</body>
+</html>
